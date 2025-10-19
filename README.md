@@ -2,7 +2,7 @@
 Implementation of producer-consumer program in a Linux environment.
 # Description
 This project is a two-process Producer-Consumer demonstration using POSIX shared memory and named semaphores. The producer writes pairs of random integers
-into a 256-byte shared buffer. The consumer reads these numbers from the buffer and prints them.
+into a 256-byte shared buffer. The consumer reads these numbers from the buffer and prints them. Flow control is enforced with 'SEM_EMPTY' and 'SEM_FULL'.
 It does a cycle of production and consumption ten times before unlinking and closing.
 # Installation/Execution
 All required files are provided here.
